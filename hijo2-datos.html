@@ -1,0 +1,69 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="hijo2-datos">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <div id="listaDatos">
+      <h2>Lista de datos</h2>
+      <ul>
+        <li>Dato 1</li>
+        <li>Dato 2</li>
+        <li>Dato 3</li>
+      </ul>
+    </div>
+    <div id="tablaDatos">
+      <h2>Tabla de datos</h2>
+      <table >
+
+        <tr>
+
+          <td>Celda 1</td>
+
+          <td>Celda 2</td>
+
+          <td>Celda 3</td>
+
+        </tr>
+
+        <tr>
+
+          <td>Celda 4</td>
+
+          <td>Celda 5</td>
+
+          <td>Celda 6</td>
+
+        </tr>
+
+      </table>
+    </div>
+  </template>
+
+  <script>
+/**
+* `hijo2-datos`
+* hijo 2 lista y tabla con datos
+*
+* @customElement
+* @polymer
+* @demo demo/index.html
+*/
+class Hijo2Datos extends Polymer.Element {
+  static get is() { return 'hijo2-datos'; }
+  static get properties() {
+    return {
+      prop1: {
+        type: String,
+        value: 'hijo2-datos'
+      }
+    };
+  }
+}
+
+window.customElements.define(Hijo2Datos.is, Hijo2Datos);
+</script>
+</dom-module>
